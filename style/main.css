@@ -1,0 +1,120 @@
+/* Declaração de variáveis na raiz do documento */
+:root {
+    --vermelho: #e50914;
+    --preta: #141414;
+}
+
+/*  elementos base */
+body {
+    background: var(--preta); /* usando variável */
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+/* zerando elementos*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* garante que o tamanho das caixas sejam exatamente os definidos */
+}
+
+header .container {
+    display: flex; /* flexbox. Caixas posicionadas lado-a-lado */
+    flex-direction: row; /* esse comportamento já é o padrão */
+    align-items: center; /* centraliza em relação a altura do container */
+    justify-content: space-between; /* espaço entre os elementos do container */
+}
+
+header .Logo {
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+/* filme princial */
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 100%),
+        url('../img/capa_paixaoDeCristo.jpg');
+
+    height: 500px;
+    /* height: 150%; */
+    background-size: cover; /* imagem cobre toda a caixa */
+
+    display: flex; /* alinha os elementos um ao lado do outro */
+    flex-direction: column; /* muda o comportamento padrão do display, mostrando os elementos em colunas, um abaixo do outro, ocupando 100% de largura */
+    justify-content: center; /* centralizando verticalmente os elementos */
+    align-items: flex-start; /* os elementos inicial da esquerda pra direita */
+}
+
+.filme-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.filme-principal .titulo {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+        'Lucida Sans', Arial, sans-serif;
+}
+
+.botao {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.container {
+    margin-left: 30px;
+}
+
+.filme-principal .container {
+    width: 70%;
+}
+
+.box-filme {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.box-filme:hover {
+    /* -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1); */
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.carrossel-filmes {
+    margin-top: 10px;
+}

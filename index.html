@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style/main.css" />
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+        </style>
+
+        <!-- responsividade -->
+        <link rel="stylesheet" href="./style/responsive.css" />
+
+        <!-- owl css -->
+        <link rel="stylesheet" href="style/owl/owl.carousel.min.css" />
+        <link rel="stylesheet" href="style/owl/owl.theme.default.min.css" />
+
+        <title>NETFLIX CLONE</title>
+    </head>
+
+    <body>
+        <!--cabeçalho-->
+        <header>
+            <div class="container">
+                <h1 class="Logo">NETFLIX</h1>
+                <nav>
+                    <a href="#">Início</a>
+                    <a href="#">Séries</a>
+                    <a href="#">Filmes</a>
+                    <a href="#">Documentários</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- conteúdo principal -->
+        <main>
+            <div class="filme-principal">
+                <!-- wrapper -->
+                <div class="container">
+                    <h3 class="titulo">A PAIXÃO DE CRISTO</h3>
+                    <p class="descricao">
+                        Por suas feridas, fomos curados. O filme narra as
+                        últimas 12 horas de Jesus Cristo, que, após ser traído
+                        por Judas, é preso e levado para o julgamento de Poncio
+                        Pilatos. Sem conseguir encontrar um motivo para sua
+                        condenação, ele sofre com a pressão popular, que pede a
+                        crucificação de Jesus. Direção: Mel Gibson.
+                    </p>
+
+                    <!-- essa div não herda as características de display: flex da div container porque vem por padrão com display:block. Achei desnecessário neste contexto inicial porque o button vem com display: inline-block e já seria suficiente para colocar os botões lado-a-lado -->
+                    <div class="botoes">
+                        <!-- role ="button" ajuda a reiderizar o botão em navegadores para mobile -->
+                        <button role="button" class="botao">
+                            <i class="fas fa-play"></i>
+                            ASSISTIR AGORA
+                        </button>
+                        <button role="button" class="botao">
+                            <i class="fas fa-info-circle"></i>
+                            MAIS INFORMAÇÕES
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="carrossel-filmes">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img class="box-filme" src="./img/mini01.jpg" alt="" />
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="./img/mini02.jpg" alt="" />
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="./img/mini03.jpg" alt="" />
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="./img/mini04.jpg" alt="" />
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="./img/mini05.jpg" alt="" />
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="./img/mini06.jpg" alt="" />
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="./img/mini07.jpg" alt="" />
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="./img/mini08.jpg" alt="" />
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="./img/mini09.jpg" alt="" />
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="./img/mini10.jpg" alt="" />
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="./img/mini11.jpg" alt="" />
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="./img/mini12.jpg" alt="" />
+                </div>
+            </div>
+        </div>
+
+        <script
+            src="https://kit.fontawesome.com/ed3742833f.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- owl js -->
+        <script src="./js/owl/jquery.min.js"></script>
+        <script src="./js/owl/owl.carousel.min.js"></script>
+        <script src="./js/owl/setup.js"></script>
+    </body>
+</html>
